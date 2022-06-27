@@ -1,0 +1,58 @@
+# Package Overview
+package_name: nasa_model
+
+pipeline_name: nasa_model
+pipeline_save_file: nasa_model_output_v
+
+# Data Files
+training_data_file: train.csv
+test_data_file: test.csv
+
+
+# Variables
+# The variable we are attempting to predict
+target: hazardous
+
+features:
+  - name
+  - est_diameter_min
+  - est_diameter_max
+  - relative_velocity
+  - miss_distance
+  - orbiting_body
+  - sentry_object
+  - absolute_magnitude
+
+variables_to_drop:
+  - id
+
+categorical_vars:
+  - name
+  - orbiting_body
+
+numerical_vars:
+  - est_diameter_min
+  - est_diameter_max
+  - relative_velocity
+  - miss_distance
+  - sentry_object
+  - absolute_magnitude
+
+# categorical variables with NA in train set
+categorical_vars_with_na:
+  - name
+
+# var_for_letter_extraction:
+#  - Cabin
+
+numerical_vars_with_na:
+  - miss_distance
+
+# set train/test split
+test_size: 0.2
+
+# to set the random seed
+random_state: 0
+
+# Regularization parameter
+alpha: 0.001

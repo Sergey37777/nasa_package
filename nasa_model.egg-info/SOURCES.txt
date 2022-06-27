@@ -1,0 +1,14 @@
+MANIFEST.in
+setup.py
+./requirements/requirements.txt
+./requirements/test_requirements.txt
+nasa_model/VERSION
+nasa_model/config.yml
+nasa_model.egg-info/PKG-INFO
+nasa_model.egg-info/SOURCES.txt
+nasa_model.egg-info/dependency_links.txt
+nasa_model.egg-info/requires.txt
+nasa_model.egg-info/top_level.txt
+nasa_model/datasets/test.csv
+nasa_model/datasets/train.csv
+nasa_model/trained_models/nasa_model_output_v1.0.pkl
