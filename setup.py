@@ -8,9 +8,9 @@ from setuptools import find_packages, setup
 # Package meta-data.
 NAME = "nasa-model"
 DESCRIPTION = "Nasa model package."
-URL = ""
-EMAIL = "emin.tagiev@phystech.edu"
-AUTHOR = "Emin Tagiev"
+URL = "https://github.com/Sergey37777/nasa_package"
+EMAIL = "sergey.l37@icloud.com"
+AUTHOR = "Sergey Lyapin"
 REQUIRES_PYTHON = ">=3.6.0"
 
 
